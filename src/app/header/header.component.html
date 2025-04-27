@@ -1,0 +1,20 @@
+<header class="header">
+	<div class="logo">COFFEE</div>
+
+	@if (selectedCoffee) {
+	<div class="selected-coffee">
+		Selected: {{ selectedCoffee }}
+	</div>
+	}
+
+	<nav>
+		<ul>
+			<li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a></li>
+			<li><a routerLink="/#" routerLinkActive="active">COFFEE</a></li>
+			<li><a routerLink="/#" routerLinkActive="active">BAKERY</a></li>
+			<li><a routerLink="/#" routerLinkActive="active">SHOP</a></li>
+			<li><a routerLink="/#" routerLinkActive="active">ABOUT</a></li>
+			<li><a routerLink="/#" routerLinkActive="active">LOGIN</a></li>
+		</ul>
+	</nav>
+</header>
